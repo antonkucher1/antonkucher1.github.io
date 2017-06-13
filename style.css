@@ -1,10 +1,10 @@
-box {
+.box {
  height: 100px;
  width: 100%;
  border: 2px solid #000;
 }
 
-minibox {
+.minibox {
   height: 50px;
   backgroud-color: green;
 }
