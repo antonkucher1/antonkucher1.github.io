@@ -238,7 +238,9 @@ section.success {
         padding-top: 75px;
     }
 }
-
+#portfolio{
+    transition: all 1s;
+}
 #portfolio .portfolio-item {
     margin: 0 0 15px;
     right: 0;
