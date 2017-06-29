@@ -26,7 +26,7 @@
     width: 155px;
     height: 55px;
     border: 3px solid #706b73;
-    color: white;
+    color: @main-color;
     text-align: center;
     line-height: 49px;
 }
@@ -41,20 +41,33 @@
     font-size: 36px;
     border-radius: 3px;
 }
-
+.burger {
+    transition: all .3s;
+    left: 75%;
+    top: 5vh;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: @orange;
+    position: fixed;
+    z-index: 99;
+    &:hover{
+        
+        box-shadow: 1px 1px 20px 15px rgba(0, 0, 0, 0.1);
+    }
+}
 .line {
     border-radius: 15px;
     display: block;
     width: 30px;
     height: 5px;
-    background-color: #706b73;
+    background-color: white;
     top: 50%;
     right: 0;
     position: absolute;
-    -webkit-transform: translateY(-1px);
-    -ms-transform: translateY(-1px);
-    -o-transform: translateY(-1px);
-    transform: translateY(-1px);
+    
+    transform: translateX(-5px);
 }
 
 .line::before {
@@ -62,7 +75,7 @@
     content: '';
     width: 30px;
     height: 5px;
-    background-color: #706b73;
+    background-color: white;
     top: 50%;
     right: 0;
     position: absolute;
@@ -70,6 +83,7 @@
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
+    
 }
 
 .line::after {
@@ -77,7 +91,7 @@
     content: '';
     width: 30px;
     height: 5px;
-    background-color: #706b73;
+    background-color: white;
     top: 50%;
     right: 0;
     position: absolute;
@@ -85,21 +99,7 @@
     -ms-transform: translateY(4px);
     -o-transform: translateY(4px);
     transform: translateY(4px);
-}
-
-.line-active {
-    border-radius: 15px;
-    display: block;
-    width: 300px;
-    height: 5px;
-    background-color: #706b73;
-    top: 50%;
-    right: 0;
-    position: absolute;
-    -webkit-transform: translateY(-1px);
-    -ms-transform: translateY(-1px);
-    -o-transform: translateY(-1px);
-    transform: translateY(-1px);
+   
 }
 
 .main-nav-bar {
@@ -165,7 +165,7 @@ header {
     background-position: center center;
     background-size: cover;
     .main_content {
-        color: white;
+        color: @main-color;
         span {
             color: @orange;
         }
@@ -669,11 +669,7 @@ header {
     background: transparent;
 }
 
-.burger {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-}
+
 
 #global-menu {
     z-index: 9999;
