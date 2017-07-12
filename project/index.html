@@ -5,15 +5,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <meta charset="utf-8">
-
     <title>ЛП трубы</title>
+    <style>
+        @font-face{font-family:PFDinTextCompProMedium;src:url(../fonts/PFDinTextCompPro-Medium_0.ttf);font-style:normal;font-weight:400}@font-face{font-family:PFDinTextCompProThin;src:url(../fonts/PFDinTextCompPro-Thin.ttf);font-style:normal;font-weight:200}@font-face{font-family:PFDinTextCompProLight;src:url(../fonts/PFDinTextCompPro-Light_0.ttf);font-style:normal;font-weight:300}@font-face{font-family:PFDinTextCompProBold;src:url(../fonts/PFDinTextCompPro-Bold_0.otf);font-style:normal;font-weight:600}.font-200{font-family:PFDinTextCompProThin}.font-400{font-family:PFDinTextCompProMedium}.font-300{font-family:PFDinTextCompProLight}.font-600{font-family:PFDinTextCompProBold}header{overflow-x:hidden;width:100%;position:absolute;padding-top:35px;padding-bottom:35px;background-color:#fff;z-index:1}header i{color:#69c}header .logo{width:170px}header .menu{font-family:PFDinTextCompProMedium;font-size:16px}header .menu a{text-decoration:none;color:#333;margin-right:25px;padding-bottom:9px}header .menu a:hover{border-bottom:3px solid #69c}header .telephone{text-decoration:none;font-family:PFDinTextCompProMedium;font-size:16px;color:#333}header .email-header{font-family:PFDinTextCompProThin;font-size:18px;color:#333}
+        #content{background:url(../bg/background-1.jpg) center center no-repeat;background-size:cover;padding-top:300px;padding-bottom:100px}#content h1{margin-bottom:30px;font-family:PFDinTextCompProMedium;color:#333;font-size:64px}#content .pluses p{font-family:PFDinTextCompProThin;font-size:22px}#content .pluses p img{width:25px;color:#69c}
+    </style>
 </head>
 
 <body>
     <header>
-        
-            <div class="row">
-               <div class="container">
+        <div class="row">
+            <div class="container">
                 <div class="col-md-2 col-sm-12 text-centered">
                     <img class="logo" src="logo.png" alt="">
                 </div>
@@ -378,13 +380,13 @@
     </footer>
     <div class="popup-overlay">
         <div id="thank-you" class="text-center">
-               <span class="close-x">&times;</span>
+            <span class="close-x">&times;</span>
             <h2>Ваша заявка отправлена</h2>
             <p>мы вам перезвоним</p>
         </div>
         <div class="popup-form text-center">
             <div class="row">
-                   <span class="close-x">&times;</span>
+                <span class="close-x">&times;</span>
                 <h2>Для заказа оставьте заявку</h2>
                 <p>и мы перезвоним вам дляу точнения деталей</p>
             </div>
@@ -396,7 +398,7 @@
                     <br>
                     <button class="btn popup-submit">Оставить заявку</button>
                 </form>
-               
+
             </div>
         </div>
     </div>
@@ -406,47 +408,47 @@
     <script src="js/burger.js"></script>
     <!--POPUP-->
     <!--динамичная шапка-->
-    <script> 
-        $(document).ready(function(){
-           $('section#content').hover(function(){
-               $('header').css('position','absolute');
-           }, function(){
-               $('header').css('position', 'fixed');
-           });
+    <script>
+        $(document).ready(function() {
+            $('section#content').hover(function() {
+                $('header').css('position', 'absolute');
+            }, function() {
+                $('header').css('position', 'fixed');
+            });
         });
     </script>
-    <script> 
-    $(document).ready(function(){
-        $('.footer-form').submit(function(){
-           $.ajax({
-               type: "POST",
-               url: "mail.php",
-               data: $(this).serialize()
-           }).done(function(){
-              $(this).find("input").val("");
-               alert ("Спасибо за заявку! Скоро мы с вами свяжемся.");
-               $(".footer-form").trigger("reset");
-           });
-            return false;
+    <script>
+        $(document).ready(function() {
+            $('.footer-form').submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+                    alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+                    $(".footer-form").trigger("reset");
+                });
+                return false;
+            });
+            $('.thanks').click(function() {
+                $('.popup-overlay').addClass('open');
+                $('#thank-you').addClass('open');
+                $('.popup-form').removeClass('open');
+            });
+            $('.close-x').click(function() {
+                $('.popup-overlay').removeClass('open');
+            });
+            $('.zakaz').click(function() {
+                $('.popup-overlay').addClass('open');
+                $('#thank-you').remove('open');
+                $('.popup-form').addClass('open');
+            });
+            $('.popup-submit').click(function() {
+                $('#thank-you').addClass('open');
+                $('.popup-form').removeClass('open');
+            });
         });
-        $('.thanks').click(function(){
-           $('.popup-overlay').addClass('open');
-            $('#thank-you').addClass('open');
-            $('.popup-form').removeClass('open');
-        });
-        $('.close-x').click(function(){
-            $('.popup-overlay').removeClass('open');
-        });
-        $('.zakaz').click(function(){
-             $('.popup-overlay').addClass('open');
-             $('#thank-you').remove('open');
-            $('.popup-form').addClass('open');
-        });
-        $('.popup-submit').click(function(){
-             $('#thank-you').addClass('open');
-            $('.popup-form').removeClass('open');
-        });
-    });
     </script>
 </body>
 </html>
