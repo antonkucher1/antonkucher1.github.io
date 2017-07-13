@@ -426,7 +426,7 @@
                     url: "smart.php",
                     data: $(this).serialize()
                 }).done(function() {
-                    $(this).find("input").val("");
+                    $('input').val('');
                     $(".footer-form").trigger("reset");
                 });
                 return false;
