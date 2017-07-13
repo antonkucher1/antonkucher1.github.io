@@ -367,11 +367,11 @@
                     <div class="col-lg-3 col-lg-offset-2 col-md-offset-0 col-sm-offset-3">
                         <h3>Напишите нам</h3>
                         <form action="#" class="footer-form">
-                            <input type="text" placeholder=" Введите имя ...">
+                            <input type="text" name="username" placeholder=" Введите имя ...">
                             <br>
-                            <input type="text" placeholder=" Ваш e-mail ...">
+                            <input type="text" name="email" placeholder=" Ваш e-mail ...">
                             <br>
-                            <textarea name="" id="" cols="34" rows="5" placeholder=" Ваш вопрос ..."></textarea><br>
+                            <textarea name="message" cols="34" rows="5" placeholder=" Ваш вопрос ..."></textarea><br>
                             <button class="thanks btn col-md-offset-8 col-lg-offset-0">Отправить</button>
                         </form>
                     </div>
@@ -392,10 +392,10 @@
                 <p>и мы перезвоним вам дляу точнения деталей</p>
             </div>
             <div class="row">
-                <form action="" class="footer-form">
-                    <input type="text" placeholder="Ваше имя ...">
+                <form action="#" method="POST" class="footer-form">
+                    <input type="text" name="username" placeholder="Ваше имя ...">
                     <br>
-                    <input type="text" placeholder="Ваш e-mail ...">
+                    <input type="text" name="email" placeholder="Ваш e-mail ...">
                     <br>
                     <button class="btn popup-submit">Оставить заявку</button>
                 </form>
@@ -423,11 +423,10 @@
             $('.footer-form').submit(function() {
                 $.ajax({
                     type: "POST",
-                    url: "mail.php",
+                    url: "smart.php",
                     data: $(this).serialize()
                 }).done(function() {
                     $(this).find("input").val("");
-                    alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
                     $(".footer-form").trigger("reset");
                 });
                 return false;

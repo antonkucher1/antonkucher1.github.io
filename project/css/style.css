@@ -1,1 +1,570 @@
-@font-face{font-family:PFDinTextCompProMedium;src:url(../fonts/PFDinTextCompPro-Medium_0.ttf);font-style:normal;font-weight:400}@font-face{font-family:PFDinTextCompProThin;src:url(../fonts/PFDinTextCompPro-Thin.ttf);font-style:normal;font-weight:200}@font-face{font-family:PFDinTextCompProLight;src:url(../fonts/PFDinTextCompPro-Light_0.ttf);font-style:normal;font-weight:300}@font-face{font-family:PFDinTextCompProBold;src:url(../fonts/PFDinTextCompPro-Bold_0.otf);font-style:normal;font-weight:600}.font-200{font-family:PFDinTextCompProThin}.font-400{font-family:PFDinTextCompProMedium}.font-300{font-family:PFDinTextCompProLight}.font-600{font-family:PFDinTextCompProBold}header{overflow-x:hidden;width:100%;position:absolute;padding-top:35px;padding-bottom:35px;background-color:#fff;z-index:1}header i{color:#69c}header .logo{width:170px}header .menu{font-family:PFDinTextCompProMedium;font-size:16px}header .menu a{text-decoration:none;color:#333;margin-right:25px;padding-bottom:9px}header .menu a:hover{border-bottom:3px solid #69c}header .telephone{text-decoration:none;font-family:PFDinTextCompProMedium;font-size:16px;color:#333}header .email-header{font-family:PFDinTextCompProThin;font-size:18px;color:#333}#content{background:url(../bg/background-1.jpg) center center no-repeat;background-size:cover;padding-top:300px;padding-bottom:100px}#content h1{margin-bottom:30px;font-family:PFDinTextCompProMedium;color:#333;font-size:64px}#content .pluses p{font-family:PFDinTextCompProThin;font-size:22px}#content .pluses p img{width:25px;color:#69c}#proizvod{background-color:#f8f8f8}#proizvod img{width:70px}#proizvod span{font-family:PFDinTextCompProBold;color:#69c;font-size:30px}#proizvod p{font-size:20px;font-family:PFDinTextCompProLight}#proizvod .box{padding-top:40px;padding-bottom:40px;height:280px;transition:.3s}#proizvod .box img{margin-bottom:30px}#proizvod .box:hover{background-color:#fff;box-shadow:0 0 30px rgba(0,0,0,.2)}.novbar{margin-top:50px;margin-bottom:50px}.novbar p{font-family:PFDinTextCompProThin;font-size:22px}.novbar p img{width:25px;color:#69c}#sklad{background:url(../bg/background-2.jpg) no-repeat;background-size:cover}.boxes{background-color:#fff;padding:45px;height:340px}.boxes p{font-family:PFDinTextCompProThin;font-size:22px}.boxes p img{width:24px;height:20px;color:#69c}#trubi{padding-bottom:0;overflow-y:hidden;background-color:#f8f8f8}#trubi .boxy{height:220px}#trubi .boxy p{font-family:PFDinTextCompProLight;font-size:19px}#trubi .boxy p img{width:24px;height:20px}#trubi .boxy img{vertical-align:bottom}#trubi .boxy:hover{background-color:#fff;color:#69c}section#faq h3{font-family:PFDinTextCompProMedium;text-transform:uppercase}section#faq li,section#faq p{font-family:PFDinTextCompProLight;font-size:20px;color:#333}section#faq .price-box{margin-top:30px;width:355px;background-color:#f8f8f8;padding:0;margin-right:35px}section#faq .price-box:hover .white-up{background-color:#fff;opacity:.3}section#faq .price-box .picture{width:100%;height:170px;background:url(../images-2/1.jpg) center bottom no-repeat;background-size:cover;margin-bottom:20px}section#faq .price-box .picture .white-up{width:100%;height:170px;transition:1s}section#faq .price-box img{margin-bottom:20px}section#faq .price-box p{font-family:PFDinTextCompProLight;font-size:20px;color:#333}section#faq .price-box span{font-family:PFDinTextCompProBold;font-size:26px}section#faq .price-box button.btn{margin-top:25px;margin-bottom:25px}section#faq .blue{color:#69c}section#fitings{background-color:#f8f8f8}section#fitings .box-fiting{margin-left:10px;background-color:#fff;width:370px;height:245px;padding:30px}section#fitings .box-fiting p{font-family:PFDinTextCompProMedium;font-size:19px;color:#333}section#fitings .box-fiting ul{font-family:PFDinTextCompProLight;color:#333;font-size:18px;letter-spacing:-.3px}section#why{background-color:#f8f8f8}section#why span{text-transform:uppercase;font-family:PFDinTextCompProMedium;font-size:20px;margin-bottom:35px}section#why p{font-family:PFDinTextCompProLight;font-size:20px}section#why .box-why{height:300px;margin-bottom:30px;padding-top:25px;padding-bottom:35px;transition:all .3s}section#why .box-why:hover{background-color:#fff;box-shadow:0 0 50px rgba(0,0,0,.1)}section#why .box-why img{margin-bottom:30px}section.default{padding-top:120px;padding-bottom:120px}section.default h1,section.default h2{font-family:PFDinTextCompProMedium;text-transform:uppercase;color:#333;font-size:39px}section.default h2{font-size:26px}section.default hr{height:5px;width:80px;background-color:#69c;margin-bottom:90px}footer{background-color:#333;padding-top:25px;padding-bottom:25px}footer i{font-size:18px;color:#333;background-color:#ccc;border-radius:50px;padding:5px 8px;margin-right:10px}footer span{font-family:PFDinTextCompProLight;font-size:18px;color:#999}footer .pas,footer p{font-family:PFDinTextCompProLight;text-align:left;color:#fff;font-size:20px}footer h3{font-family:PFDinTextCompProBold;color:#fff;text-transform:uppercase}footer form input,footer form textarea{border:0;border-radius:6px;margin:4px;height:50px;width:270px}footer form textarea{width:270px;height:100px}.popup-overlay{z-index:2;display:none;position:fixed;width:100%;height:100vh;background-color:rgba(51,51,51,.9);left:0;top:0}.popup-overlay #thank-you{display:none;background-color:#f8f8f8;position:absolute;top:45%;left:50%;margin-left:-150px;padding:10px 30px;border-radius:5px}.popup-overlay #thank-you span{cursor:pointer;position:absolute;font-size:30px;color:#ccc;transform:translate(800%,-100%);transition:all .3s}.popup-overlay #thank-you span:hover{color:#fff}.popup-overlay #thank-you h2{font-family:PFDinTextCompProBold;font-size:24px;text-transform:uppercase;color:#333}.popup-overlay #thank-you p{font-family:PFDinTextCompProLight;font-size:18px;color:#333;margin-bottom:30px}.popup-form{display:none;width:360px;margin-left:-180px;top:50%;margin-top:-200px;left:50%;padding:30px 40px 40px;border-radius:5px;position:absolute;background-color:#f8f8f8}.popup-form span{cursor:pointer;position:absolute;font-size:30px;color:#ccc;transition:all .3s;transform:translate(1000%,-150%)}.popup-form span:hover{color:#fff}.popup-form h2{font-family:PFDinTextCompProBold;font-size:24px;text-transform:uppercase;color:#333}.popup-form p{font-family:PFDinTextCompProLight;font-size:18px;color:#333;margin-bottom:30px}.popup-form input{padding:10px;border-radius:6px;margin:4px;height:50px;width:270px;border:0}.popup-form .btn{margin-top:10px}.btn{background-color:#69c;width:270px;height:70px;color:#fff;font-family:PFDinTextCompProBold;font-size:22px;box-shadow:0 7px 13px 0 rgba(51,140,190,.2)}.btn:hover{color:#fff}.btn:enabled{color:#fff}@media (max-width:480px){.text-centered{text-align:center}}@media (min-width:481px) and (max-width:767px){.text-centered{text-align:center}}@media (min-width:768px) and (max-width:991px){.text-centered{text-align:center}.price-box{width:600px!important}.box-fiting{transform:translateX(50%)}}@media (min-width:992px) and (max-width:1199px){.price-box{width:288px!important}.box-fiting{width:303px!important;height:390px!important}}.open{display:inline-block!important}.close{display:none!important}
+@font-face {
+    font-family: PFDinTextCompProMedium;
+    src: url(../fonts/PFDinTextCompPro-Medium_0.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: PFDinTextCompProThin;
+    src: url(../fonts/PFDinTextCompPro-Thin.ttf);
+    font-style: normal;
+    font-weight: 200
+}
+
+@font-face {
+    font-family: PFDinTextCompProLight;
+    src: url(../fonts/PFDinTextCompPro-Light_0.ttf);
+    font-style: normal;
+    font-weight: 300
+}
+
+@font-face {
+    font-family: PFDinTextCompProBold;
+    src: url(../fonts/PFDinTextCompPro-Bold_0.otf);
+    font-style: normal;
+    font-weight: 600
+}
+
+.font-200 {
+    font-family: PFDinTextCompProThin
+}
+
+.font-400 {
+    font-family: PFDinTextCompProMedium
+}
+
+.font-300 {
+    font-family: PFDinTextCompProLight
+}
+
+.font-600 {
+    font-family: PFDinTextCompProBold
+}
+
+header {
+    overflow-x: hidden;
+    width: 100%;
+    position: absolute;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #fff;
+    z-index: 1
+}
+
+header i {
+    color: #69c
+}
+
+header .logo {
+    width: 170px
+}
+
+header .menu {
+    font-family: PFDinTextCompProMedium;
+    font-size: 16px
+}
+
+header .menu a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 25px;
+    padding-bottom: 9px
+}
+
+header .menu a:hover {
+    border-bottom: 3px solid #69c
+}
+
+header .telephone {
+    text-decoration: none;
+    font-family: PFDinTextCompProMedium;
+    font-size: 16px;
+    color: #333
+}
+
+header .email-header {
+    font-family: PFDinTextCompProThin;
+    font-size: 18px;
+    color: #333
+}
+
+#content {
+    background: url(../bg/background-1.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 100px
+}
+
+#content h1 {
+    margin-bottom: 30px;
+    font-family: PFDinTextCompProMedium;
+    color: #333;
+    font-size: 64px
+}
+
+#content .pluses p {
+    font-family: PFDinTextCompProThin;
+    font-size: 22px
+}
+
+#content .pluses p img {
+    width: 25px;
+    color: #69c
+}
+
+#proizvod {
+    background-color: #f8f8f8
+}
+
+#proizvod img {
+    width: 70px
+}
+
+#proizvod span {
+    font-family: PFDinTextCompProBold;
+    color: #69c;
+    font-size: 30px
+}
+
+#proizvod p {
+    font-size: 20px;
+    font-family: PFDinTextCompProLight
+}
+
+#proizvod .box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 280px;
+    transition: .3s
+}
+
+#proizvod .box img {
+    margin-bottom: 30px
+}
+
+#proizvod .box:hover {
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2)
+}
+
+.novbar {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.novbar p {
+    font-family: PFDinTextCompProThin;
+    font-size: 22px
+}
+
+.novbar p img {
+    width: 25px;
+    color: #69c
+}
+
+#sklad {
+    background: url(../bg/background-2.jpg) no-repeat;
+    background-size: cover
+}
+
+.boxes {
+    background-color: #fff;
+    padding: 45px;
+    height: 340px
+}
+
+.boxes p {
+    font-family: PFDinTextCompProThin;
+    font-size: 22px
+}
+
+.boxes p img {
+    width: 24px;
+    height: 20px;
+    color: #69c
+}
+
+#trubi {
+    padding-bottom: 0;
+    overflow-y: hidden;
+    background-color: #f8f8f8
+}
+
+#trubi .boxy {
+    height: 220px
+}
+
+#trubi .boxy p {
+    font-family: PFDinTextCompProLight;
+    font-size: 19px
+}
+
+#trubi .boxy p img {
+    width: 24px;
+    height: 20px
+}
+
+#trubi .boxy img {
+    vertical-align: bottom
+}
+
+#trubi .boxy:hover {
+    background-color: #fff;
+    color: #69c
+}
+
+section#faq h3 {
+    font-family: PFDinTextCompProMedium;
+    text-transform: uppercase
+}
+
+section#faq li,
+section#faq p {
+    font-family: PFDinTextCompProLight;
+    font-size: 20px;
+    color: #333
+}
+
+section#faq .price-box {
+    margin-top: 30px;
+    width: 355px;
+    background-color: #f8f8f8;
+    padding: 0;
+    margin-right: 35px
+}
+
+section#faq .price-box:hover .white-up {
+    background-color: #fff;
+    opacity: .3
+}
+
+section#faq .price-box .picture {
+    width: 100%;
+    height: 170px;
+    background: url(../images-2/1.jpg) center bottom no-repeat;
+    background-size: cover;
+    margin-bottom: 20px
+}
+
+section#faq .price-box .picture .white-up {
+    width: 100%;
+    height: 170px;
+    transition: 1s
+}
+
+section#faq .price-box img {
+    margin-bottom: 20px
+}
+
+section#faq .price-box p {
+    font-family: PFDinTextCompProLight;
+    font-size: 20px;
+    color: #333
+}
+
+section#faq .price-box span {
+    font-family: PFDinTextCompProBold;
+    font-size: 26px
+}
+
+section#faq .price-box button.btn {
+    margin-top: 25px;
+    margin-bottom: 25px
+}
+
+section#faq .blue {
+    color: #69c
+}
+
+section#fitings {
+    background-color: #f8f8f8
+}
+
+section#fitings .box-fiting {
+    margin-left: 10px;
+    background-color: #fff;
+    width: 370px;
+    height: 245px;
+    padding: 30px
+}
+
+section#fitings .box-fiting p {
+    font-family: PFDinTextCompProMedium;
+    font-size: 19px;
+    color: #333
+}
+
+section#fitings .box-fiting ul {
+    font-family: PFDinTextCompProLight;
+    color: #333;
+    font-size: 18px;
+    letter-spacing: -.3px
+}
+
+section#why {
+    background-color: #f8f8f8
+}
+
+section#why span {
+    text-transform: uppercase;
+    font-family: PFDinTextCompProMedium;
+    font-size: 20px;
+    margin-bottom: 35px
+}
+
+section#why p {
+    font-family: PFDinTextCompProLight;
+    font-size: 20px
+}
+
+section#why .box-why {
+    height: 300px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    transition: all .3s
+}
+
+section#why .box-why:hover {
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .1)
+}
+
+section#why .box-why img {
+    margin-bottom: 30px
+}
+
+section.default {
+    padding-top: 120px;
+    padding-bottom: 120px
+}
+
+section.default h1,
+section.default h2 {
+    font-family: PFDinTextCompProMedium;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 39px
+}
+
+section.default h2 {
+    font-size: 26px
+}
+
+section.default hr {
+    height: 5px;
+    width: 80px;
+    background-color: #69c;
+    margin-bottom: 90px
+}
+
+footer {
+    background-color: #333;
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+
+footer i {
+    font-size: 18px;
+    color: #333;
+    background-color: #ccc;
+    border-radius: 50px;
+    padding: 5px 8px;
+    margin-right: 10px
+}
+
+footer span {
+    font-family: PFDinTextCompProLight;
+    font-size: 18px;
+    color: #999
+}
+footer .pas,
+footer p {
+    font-family: PFDinTextCompProLight;
+    text-align: left;
+    color: #fff;
+    font-size: 20px
+}
+
+footer h3 {
+    font-family: PFDinTextCompProBold;
+    color: #fff;
+    text-transform: uppercase
+}
+
+footer form input,
+footer form textarea {
+    border: 0;
+    border-radius: 6px;
+    margin: 4px;
+    height: 50px;
+    width: 270px
+}
+
+footer form textarea {
+    width: 270px;
+    height: 100px
+}
+
+.popup-overlay {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, .9);
+    left: 0;
+    top: 0
+}
+
+.popup-overlay #thank-you {
+    display: none;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -150px;
+    padding: 10px 30px;
+    border-radius: 5px
+}
+
+.popup-overlay #thank-you span {
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    color: #ccc;
+    transform: translate(800%, -100%);
+    transition: all .3s
+}
+
+.popup-overlay #thank-you span:hover {
+    color: #fff
+}
+
+.popup-overlay #thank-you h2 {
+    font-family: PFDinTextCompProBold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #333
+}
+
+.popup-overlay #thank-you p {
+    font-family: PFDinTextCompProLight;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px
+}
+
+.popup-form {
+    display: none;
+    width: 360px;
+    margin-left: -180px;
+    top: 50%;
+    margin-top: -200px;
+    left: 50%;
+    padding: 30px 40px 40px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #f8f8f8
+}
+
+.popup-form span {
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    color: #ccc;
+    transition: all .3s;
+    transform: translate(1000%, -150%)
+}
+
+.popup-form span:hover {
+    color: #fff
+}
+
+.popup-form h2 {
+    font-family: PFDinTextCompProBold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #333
+}
+
+.popup-form p {
+    font-family: PFDinTextCompProLight;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px
+}
+
+.popup-form input {
+    padding: 10px;
+    border-radius: 6px;
+    margin: 4px;
+    height: 50px;
+    width: 270px;
+    border: 0
+}
+
+.popup-form .btn {
+    margin-top: 10px
+}
+
+.btn {
+    background-color: #69c;
+    width: 270px;
+    height: 70px;
+    color: #fff;
+    font-family: PFDinTextCompProBold;
+    font-size: 22px;
+    box-shadow: 0 7px 13px 0 rgba(51, 140, 190, .2)
+}
+
+.btn:hover {
+    color: #fff
+}
+
+.btn:enabled {
+    color: #fff
+}
+
+@media (max-width:480px) {
+    .text-centered {
+        text-align: center
+    }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+    .text-centered {
+        text-align: center
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .text-centered {
+        text-align: center
+    }
+    .price-box {
+        width: 600px!important
+    }
+    .box-fiting {
+        transform: translateX(50%)
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .price-box {
+        width: 288px!important
+    }
+    .box-fiting {
+        width: 303px!important;
+        height: 390px!important
+    }
+}
+
+.open {
+    display: inline-block!important
+}
+
+.close {
+    display: none!important
+}
