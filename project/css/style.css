@@ -557,6 +557,9 @@ footer form textarea {
 }
 
 @media (min-width:768px) and (max-width:991px) {
+    .boxes {
+        padding: 20px;
+    }
     header .menu {
         transform: translateX(-15%);
         margin-top: 40px;
@@ -576,9 +579,6 @@ footer form textarea {
 @media (min-width:991px) and (max-width:1199px) {
     header .menu {
         transform: translateX(10%);
-       
-    }
-    header .menu {
        
     }
     .price-box {
