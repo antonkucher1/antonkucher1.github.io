@@ -62,7 +62,8 @@ header .logo {
 
 header .menu {
     font-family: PFDinTextCompProMedium;
-    font-size: 16px
+    font-size: 16px;
+    text-transform: uppercase
 }
 
 header .menu a {
@@ -105,12 +106,14 @@ header .email-header {
 
 #content .pluses p {
     font-family: PFDinTextCompProThin;
-    font-size: 22px
+    font-size: 22px;
+    margin-left: 20px;
 }
 
 #content .pluses p img {
     width: 25px;
-    color: #69c
+    color: #69c;
+    margin-right: 5px;
 }
 
 #proizvod {
@@ -180,7 +183,7 @@ header .email-header {
 }
 
 .boxes p img {
-    width: 24px;
+   margin-right: 10px;
     height: 20px;
     color: #69c
 }
@@ -399,14 +402,17 @@ footer form textarea {
     border-radius: 6px;
     margin: 4px;
     height: 50px;
-    width: 270px
+    width: 270px;
+    padding: 20px;
 }
 
 footer form textarea {
     width: 270px;
     height: 100px
 }
-
+.footer-form button {
+    margin-left: 4px;
+}
 .popup-overlay {
     z-index: 2;
     display: none;
@@ -528,18 +534,34 @@ footer form textarea {
 }
 
 @media (max-width:480px) {
+    header .menu {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
     .text-centered {
         text-align: center
+    }
+    .price-box{ 
+    transform: translateX(-14%);
     }
 }
 
 @media (min-width:481px) and (max-width:767px) {
+     header .menu {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
     .text-centered {
         text-align: center
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
+    header .menu {
+        transform: translateX(-15%);
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
     .text-centered {
         text-align: center
     }
@@ -551,7 +573,14 @@ footer form textarea {
     }
 }
 
-@media (min-width:992px) and (max-width:1199px) {
+@media (min-width:991px) and (max-width:1199px) {
+    header .menu {
+        transform: translateX(10%);
+       
+    }
+    header .menu {
+       
+    }
     .price-box {
         width: 288px!important
     }
@@ -568,3 +597,4 @@ footer form textarea {
 .close {
     display: none!important
 }
+
