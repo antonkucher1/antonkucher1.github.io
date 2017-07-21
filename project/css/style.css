@@ -72,6 +72,9 @@ header .menu a {
     margin-right: 25px;
     padding-bottom: 9px
 }
+ul.snas {
+    margin-left: -20px;
+}
 
 header .menu a:hover {
     border-bottom: 3px solid #69c
@@ -195,7 +198,13 @@ header .email-header {
 }
 
 #trubi .boxy {
-    height: 220px
+    height: 220px;
+    color: #333;
+    overflow: hidden;
+}
+#trubi li.active a .boxy{
+    background-color: #fff !important;
+    color: #69c !important;
 }
 
 #trubi .boxy p {
@@ -221,7 +230,9 @@ section#faq h3 {
     font-family: PFDinTextCompProMedium;
     text-transform: uppercase
 }
-
+ul {
+    list-style: none;
+}
 section#faq li,
 section#faq p {
     font-family: PFDinTextCompProLight;
@@ -534,6 +545,10 @@ footer form textarea {
 }
 
 @media (max-width:480px) {
+    #content h1 {
+        font-size: 50px;
+    }
+    
     header .menu {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -542,7 +557,11 @@ footer form textarea {
         text-align: center
     }
     .price-box{ 
-    transform: translateX(-14%);
+    margin-left: 0;
+    }
+    .boxy {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 }
 
