@@ -576,6 +576,9 @@ footer form textarea {
         height: auto!important;
         margin-bottom: 15px;
     }
+     .adress {
+        text-align: center;
+    }
 }
 
 @media (min-width:481px) and (max-width:767px) {
@@ -585,6 +588,9 @@ footer form textarea {
     }
     .text-centered {
         text-align: center
+    }
+    .adress {
+        text-align: center;
     }
      .box-fiting {
         transform: translateX(15%);
@@ -613,6 +619,7 @@ footer form textarea {
         width: 80% !important;
         height: 300px !important;
     }
+    
 }
 
 @media (min-width:991px) and (max-width:1199px) {
