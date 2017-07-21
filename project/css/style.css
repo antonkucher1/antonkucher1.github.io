@@ -558,6 +558,7 @@ footer form textarea {
     }
     .price-box{ 
     margin-left: 0;
+        width: 100% !important;
     }
     .boxy {
         width: 100% !important;
