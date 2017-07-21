@@ -429,7 +429,7 @@ footer form textarea {
 }
 
 .footer-form button {
-    margin-left: 4px;
+    margin-left: 0px;
 }
 
 .popup-overlay {
@@ -557,6 +557,10 @@ footer form textarea {
 }
 
 @media (max-width:480px) {
+    .boxes {
+        padding: 20px;
+        height: auto !important;
+    }
     #content h1 {
         font-size: 50px;
     }
@@ -590,10 +594,15 @@ footer form textarea {
 }
 
 @media (min-width:481px) and (max-width:767px) {
+    .boxes {
+        padding: 20px;
+        height: auto !important;
+    }
     header .menu {
         margin-top: 20px;
         margin-bottom: 10px;
     }
+    
     .text-centered {
         text-align: center
     }
@@ -613,6 +622,7 @@ footer form textarea {
 @media (min-width:768px) and (max-width:991px) {
     .boxes {
         padding: 20px;
+        height: auto !important;
     }
     header .menu {
         transform: translateX(-15%);
