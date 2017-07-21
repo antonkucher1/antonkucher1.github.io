@@ -72,6 +72,7 @@ header .menu a {
     margin-right: 25px;
     padding-bottom: 9px
 }
+
 ul.snas {
     margin-left: -20px;
 }
@@ -186,7 +187,7 @@ header .email-header {
 }
 
 .boxes p img {
-   margin-right: 10px;
+    margin-right: 10px;
     height: 20px;
     color: #69c
 }
@@ -203,7 +204,8 @@ header .email-header {
     color: #333;
     overflow: hidden;
 }
-#trubi li.active a .boxy{
+
+#trubi li.active a .boxy {
     background-color: #fff !important;
     color: #69c !important;
 }
@@ -231,9 +233,11 @@ section#faq h3 {
     font-family: PFDinTextCompProMedium;
     text-transform: uppercase
 }
+
 ul {
     list-style: none;
 }
+
 section#faq li,
 section#faq p {
     font-family: PFDinTextCompProLight;
@@ -394,6 +398,7 @@ footer span {
     font-size: 18px;
     color: #999
 }
+
 footer .pas,
 footer p {
     font-family: PFDinTextCompProLight;
@@ -422,9 +427,11 @@ footer form textarea {
     width: 270px;
     height: 100px
 }
+
 .footer-form button {
     margin-left: 4px;
 }
+
 .popup-overlay {
     z-index: 2;
     display: none;
@@ -526,6 +533,7 @@ footer form textarea {
 .popup-form .btn {
     margin-top: 10px
 }
+
 .adress {
     margin-top: 30px;
 }
@@ -540,7 +548,6 @@ footer form textarea {
     box-shadow: 0 7px 13px 0 rgba(51, 140, 190, .2)
 }
 
-
 .btn:hover {
     color: #fff
 }
@@ -550,11 +557,9 @@ footer form textarea {
 }
 
 @media (max-width:480px) {
-    
     #content h1 {
         font-size: 50px;
     }
-    
     header .menu {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -562,27 +567,30 @@ footer form textarea {
     .text-centered {
         text-align: center
     }
-    .price-box{ 
-    margin-left: 0;
+    .price-box {
+        margin-left: 0;
         width: 100% !important;
     }
     .boxy {
         width: 100% !important;
         margin-left: 0 !important;
     }
-     .box-fiting {
-        transform: translateX(15%);
+    .box-fiting {
+        transform: translateX(10%);
         width: 80% !important;
         height: auto!important;
         margin-bottom: 15px;
     }
-     .adress {
+    .adress {
         text-align: center;
+    }
+    #trubi .boxy {
+        margin-bottom: 10px;
     }
 }
 
 @media (min-width:481px) and (max-width:767px) {
-     header .menu {
+    header .menu {
         margin-top: 20px;
         margin-bottom: 10px;
     }
@@ -592,10 +600,13 @@ footer form textarea {
     .adress {
         text-align: center;
     }
-     .box-fiting {
+    .box-fiting {
         transform: translateX(15%);
         width: 80% !important;
         height: 300px !important;
+    }
+    #trubi .boxy {
+        margin-bottom: 10px;
     }
 }
 
@@ -619,13 +630,14 @@ footer form textarea {
         width: 80% !important;
         height: 300px !important;
     }
-    
+    #trubi .boxy {
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width:991px) and (max-width:1199px) {
     header .menu {
         transform: translateX(10%);
-       
     }
     .price-box {
         width: 288px!important
@@ -643,4 +655,3 @@ footer form textarea {
 .close {
     display: none!important
 }
-

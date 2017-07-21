@@ -10,7 +10,14 @@
     <title>ЛП трубы</title>
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init();
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: false, // default
+            live: true // default
+        })
+        wow.init();
     </script>
 </head>
 
@@ -149,337 +156,357 @@
                 <hr>
             </div>
             <ul class="snas">
-            <div class="row text-center allboxes">
-                <li role="presentation" class="scripted"><a href="#electro" aria-controls="electro" role="tab" data-toggle="tab"><div data-wow-delay="0.2s" class="boxy wow fadeIn col-lg-2  col-md-2 col-md-offset-1 col-lg-offset-1 col-sm-6">
-                    <div class="text-center col-lg-10 col-lg-offset-1">
-                        <p>Трубы для электросетей</p>
-                    </div>
-                    <img src="truubs/1.png" alt="">
-                </div></a></li>
-                <li role="presentation" class="scripted active" ><a href="#vodosnabj" aria-controls="vodosnabj" role="tab" data-toggle="tab"><div data-wow-delay="0.4s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-6">
-                    <div class="text-center col-lg-10 col-lg-offset-1 ">
-                        <p>Трубы для водоснабжения</p>
-                    </div>
-                    <img class="" src="truubs/2.png" alt="">
-                </div></a></li>
-                <li role="presentation" class="scripted"><a href="#gazosnabj" aria-controls="gazosnabj" role="tab" data-toggle="tab"><div data-wow-delay="0.6s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-4">
-                    <div class="text-center col-lg-10 col-lg-offset-1">
-                        <p>Трубы для газоснабжения</p>
-                    </div>
-                    <img src="truubs/3.png" alt="">
-                </div></a></li>
-                <li role="presentation" class="scripted"><a href="#vols" aria-controls="vols" role="tab" data-toggle="tab"><div data-wow-delay="0.8s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-4">
-                    <div class="text-center col-lg-6 col-lg-offset-3">
-                        <p>Трубы для волс</p>
-                    </div>
-                    <br>
-                    <br>
-                    <img src="truubs/4.png" alt="">
-                </div></a></li>
-                <li role="presentation" class="scripted"><a href="#kanaliz" aria-controls="kanaliz" role="tab" data-toggle="tab"><div data-wow-delay="1s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-4">
-                    <div class="text-center col-lg-10 col-lg-offset-1">
-                        <p>Трубы для дренажа и канализации</p>
-                    </div>
-                    <img src="truubs/5.png" alt="">
-                </div></a></li>
-            </div>
-        </ul>
+                <div class="row text-center allboxes">
+                    <li role="presentation" class="scripted">
+                        <a href="#electro" aria-controls="electro" role="tab" data-toggle="tab">
+                            <div data-wow-delay="0.2s" class="boxy wow fadeIn col-lg-2  col-md-2 col-md-offset-1 col-lg-offset-1 col-sm-6">
+                                <div class="text-center col-lg-10 col-lg-offset-1">
+                                    <p>Трубы для электросетей</p>
+                                </div>
+                                <img src="truubs/1.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li role="presentation" class="scripted active">
+                        <a href="#vodosnabj" aria-controls="vodosnabj" role="tab" data-toggle="tab">
+                            <div data-wow-delay="0.4s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-6">
+                                <div class="text-center col-lg-10 col-lg-offset-1 ">
+                                    <p>Трубы для водоснабжения</p>
+                                </div>
+                                <img class="" src="truubs/2.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li role="presentation" class="scripted">
+                        <a href="#gazosnabj" aria-controls="gazosnabj" role="tab" data-toggle="tab">
+                            <div data-wow-delay="0.6s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-4">
+                                <div class="text-center col-lg-10 col-lg-offset-1">
+                                    <p>Трубы для газоснабжения</p>
+                                </div>
+                                <img src="truubs/3.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li role="presentation" class="scripted">
+                        <a href="#vols" aria-controls="vols" role="tab" data-toggle="tab">
+                            <div data-wow-delay="0.8s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-4">
+                                <div class="text-center col-lg-6 col-lg-offset-3">
+                                    <p>Трубы для волс</p>
+                                </div>
+                                <br>
+                                <br>
+                                <img src="truubs/4.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li role="presentation" class="scripted">
+                        <a href="#kanaliz" aria-controls="kanaliz" role="tab" data-toggle="tab">
+                            <div data-wow-delay="1s" class="boxy wow fadeIn col-lg-2 col-md-2  col-sm-4">
+                                <div class="text-center col-lg-10 col-lg-offset-1">
+                                    <p>Трубы для дренажа и канализации</p>
+                                </div>
+                                <img src="truubs/5.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </ul>
         </div>
     </section>
     <section id="faq" class="default">
         <div class="container">
-          <div class="tab-content">
-           <div id="electro" role="tabpanel" class="tab-pane">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="blue">Трубы для электросетей</h1>
-                    <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4  col-sm-6 col-lg-offset-0">
+            <div class="tab-content">
+                <div id="electro" role="tabpanel" class="tab-pane">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="blue">Трубы для электросетей</h1>
+                            <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4  col-sm-6 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба питьевая напорная</h3>
-                        <li>Полностью соответствует ГОСТ 18599-2001.</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Гарантия 50 лет.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
+                            <ul>
+                                <h3>Труба питьевая напорная</h3>
+                                <li>Полностью соответствует ГОСТ 18599-2001.</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Гарантия 50 лет.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба техническая напорная</h3>
-                        <li>Используется в цехах и на стройках</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Выдерживает высокое давление</li>
-                        <li>Высокая износостойкость</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                            <ul>
+                                <h3>Труба техническая напорная</h3>
+                                <li>Используется в цехах и на стройках</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Выдерживает высокое давление</li>
+                                <li>Высокая износостойкость</li>
+                            </ul>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d160 SDR17,6</p>
-                    <span>315,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-                <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                    <div class="row text-center">
+                        <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d160 SDR17,6</p>
+                            <span>315,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d25 SDR13,6</p>
+                            <span>172,50 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d110 SDR11</p>
+                            <span>515,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d25 SDR13,6</p>
-                    <span>172,50 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
                 </div>
-                <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                <div id="vodosnabj" role="tabpanel" class="tab-pane in active">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="blue">Трубы для водоснабжения</h1>
+                            <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d110 SDR11</p>
-                    <span>515,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-            </div>
-        </div>
-        <div id="vodosnabj" role="tabpanel" class="tab-pane in active">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="blue">Трубы для водоснабжения</h1>
-                    <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4  col-sm-6 col-lg-offset-0">
+                    <div class="row">
+                        <div class="col-md-4  col-sm-6 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба питьевая напорная</h3>
-                        <li>Полностью соответствует ГОСТ 18599-2001.</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Гарантия 50 лет.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
+                            <ul>
+                                <h3>Труба питьевая напорная</h3>
+                                <li>Полностью соответствует ГОСТ 18599-2001.</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Гарантия 50 лет.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба техническая напорная</h3>
-                        <li>Используется в цехах и на стройках</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Выдерживает высокое давление</li>
-                        <li>Высокая износостойкость</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                            <ul>
+                                <h3>Труба техническая напорная</h3>
+                                <li>Используется в цехах и на стройках</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Выдерживает высокое давление</li>
+                                <li>Высокая износостойкость</li>
+                            </ul>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d160 SDR17,6</p>
-                    <span>315,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-                <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                    <div class="row text-center">
+                        <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d160 SDR17,6</p>
+                            <span>315,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d25 SDR13,6</p>
+                            <span>172,50 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d110 SDR11</p>
+                            <span>515,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d25 SDR13,6</p>
-                    <span>172,50 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
                 </div>
-                <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                <div id="gazosnabj" role="tabpanel" class="tab-pane">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="blue">Трубы для газоснобжения</h1>
+                            <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d110 SDR11</p>
-                    <span>515,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-            </div>
-        </div>
-        <div id="gazosnabj" role="tabpanel" class="tab-pane">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="blue">Трубы для газоснобжения</h1>
-                    <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4  col-sm-6 col-lg-offset-0">
+                    <div class="row">
+                        <div class="col-md-4  col-sm-6 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба питьевая напорная</h3>
-                        <li>Полностью соответствует ГОСТ 18599-2001.</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Гарантия 50 лет.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
+                            <ul>
+                                <h3>Труба питьевая напорная</h3>
+                                <li>Полностью соответствует ГОСТ 18599-2001.</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Гарантия 50 лет.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба техническая напорная</h3>
-                        <li>Используется в цехах и на стройках</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Выдерживает высокое давление</li>
-                        <li>Высокая износостойкость</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                            <ul>
+                                <h3>Труба техническая напорная</h3>
+                                <li>Используется в цехах и на стройках</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Выдерживает высокое давление</li>
+                                <li>Высокая износостойкость</li>
+                            </ul>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d160 SDR17,6</p>
-                    <span>315,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-                <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                    <div class="row text-center">
+                        <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d160 SDR17,6</p>
+                            <span>315,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d25 SDR13,6</p>
+                            <span>172,50 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d110 SDR11</p>
+                            <span>515,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d25 SDR13,6</p>
-                    <span>172,50 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
                 </div>
-                <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                <div id="vols" role="tabpanel" class="tab-pane">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="blue">Трубы для волс</h1>
+                            <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d110 SDR11</p>
-                    <span>515,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-            </div>
-        </div>
-        <div id="vols" role="tabpanel" class="tab-pane">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="blue">Трубы для волс</h1>
-                    <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4  col-sm-6 col-lg-offset-0">
+                    <div class="row">
+                        <div class="col-md-4  col-sm-6 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба питьевая напорная</h3>
-                        <li>Полностью соответствует ГОСТ 18599-2001.</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Гарантия 50 лет.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
+                            <ul>
+                                <h3>Труба питьевая напорная</h3>
+                                <li>Полностью соответствует ГОСТ 18599-2001.</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Гарантия 50 лет.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба техническая напорная</h3>
-                        <li>Используется в цехах и на стройках</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Выдерживает высокое давление</li>
-                        <li>Высокая износостойкость</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                            <ul>
+                                <h3>Труба техническая напорная</h3>
+                                <li>Используется в цехах и на стройках</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Выдерживает высокое давление</li>
+                                <li>Высокая износостойкость</li>
+                            </ul>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d160 SDR17,6</p>
-                    <span>315,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-                <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                    <div class="row text-center">
+                        <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d160 SDR17,6</p>
+                            <span>315,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d25 SDR13,6</p>
+                            <span>172,50 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d110 SDR11</p>
+                            <span>515,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d25 SDR13,6</p>
-                    <span>172,50 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
                 </div>
-                <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
+                <div id="kanaliz" role="tabpanel" class="tab-pane">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="blue">Трубы для дренажа и канализации</h1>
+                            <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+                        </div>
                     </div>
-                    <p>Труба ПЭ100 d110 SDR11</p>
-                    <span>515,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-            </div>
-        </div>
-        <div id="kanaliz" role="tabpanel" class="tab-pane">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="blue">Трубы для дренажа и канализации</h1>
-                    <p>Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4  col-sm-6 col-lg-offset-0">
+                    <div class="row">
+                        <div class="col-md-4  col-sm-6 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба питьевая напорная</h3>
-                        <li>Полностью соответствует ГОСТ 18599-2001.</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Гарантия 50 лет.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
+                            <ul>
+                                <h3>Труба питьевая напорная</h3>
+                                <li>Полностью соответствует ГОСТ 18599-2001.</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Гарантия 50 лет.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-md-offset-1 col-lg-offset-0">
 
-                    <ul>
-                        <h3>Труба техническая напорная</h3>
-                        <li>Используется в цехах и на стройках</li>
-                        <li>Соединение сваркой или фитингами.</li>
-                        <li>Выдерживает высокое давление</li>
-                        <li>Высокая износостойкость</li>
-                    </ul>
+                            <ul>
+                                <h3>Труба техническая напорная</h3>
+                                <li>Используется в цехах и на стройках</li>
+                                <li>Соединение сваркой или фитингами.</li>
+                                <li>Выдерживает высокое давление</li>
+                                <li>Высокая износостойкость</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d160 SDR17,6</p>
+                            <span>315,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d25 SDR13,6</p>
+                            <span>172,50 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                        <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
+                            <div class="picture">
+                                <div class="white-up"></div>
+                            </div>
+                            <p>Труба ПЭ100 d110 SDR11</p>
+                            <span>515,32 Руб.</span>
+                            <br>
+                            <button class="btn zakaz">КУПИТЬ</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row text-center">
-                <div data-wow-delay="0.2s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
-                    </div>
-                    <p>Труба ПЭ100 d160 SDR17,6</p>
-                    <span>315,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-                <div data-wow-delay="0.4s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
-                    </div>
-                    <p>Труба ПЭ100 d25 SDR13,6</p>
-                    <span>172,50 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-                <div data-wow-delay="0.6s" class="wow flipInX col-lg-2 col-md-2 col-sm-offset-1 col-md-offset-0 price-box col-xs-offset-3">
-                    <div class="picture">
-                        <div class="white-up"></div>
-                    </div>
-                    <p>Труба ПЭ100 d110 SDR11</p>
-                    <span>515,32 Руб.</span>
-                    <br>
-                    <button class="btn zakaz">КУПИТЬ</button>
-                </div>
-            </div>
-        </div>
-        </div>
         </div>
     </section>
     <section id="fitings" class="default">
@@ -580,7 +607,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                   
+
                     <div class="col-lg-3 col-md-4 col-sm-6 adress">
                         <i class="fa fa-map-marker" aria-hidden="true"></i><span class="text-ce">Адрес офиса: г. Екатеринбург</span>
                         <p class="text-centered">пр-кт Космонавтов, 145в/1</p>
@@ -601,7 +628,7 @@
                         <i class="fa fa-location-arrow" aria-hidden="true"></i><text class="pas">ИНН: 6686073064</text>
                         <p class="text-centered">ОГРН: 1156658088982</p>
                     </div>
-                
+
 
 
                     <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-0">
@@ -646,7 +673,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    
+
     <!--POPUP-->
     <!--динамичная шапка-->
     <script>
@@ -692,8 +719,8 @@
     </script>
     <script>
         $(document).ready(function() {
-            $('.scripted').click(function(){
-                if ($('.scripted').hasClass('active')){
+            $('.scripted').click(function() {
+                if ($('.scripted').hasClass('active')) {
                     $('.scripted').removeClass('active');
                 }
             });
