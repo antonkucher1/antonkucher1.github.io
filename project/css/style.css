@@ -108,6 +108,10 @@ header .email-header {
     font-size: 64px
 }
 
+#rightsome {
+    transform: translateX(20px)
+}
+
 #content .pluses p {
     font-family: PFDinTextCompProThin;
     font-size: 22px;
@@ -412,12 +416,12 @@ footer h3 {
     color: #fff;
     text-transform: uppercase
 }
-
 footer form input,
 footer form textarea {
+    max-width: 100%;
     border: 0;
     border-radius: 6px;
-    margin: 4px;
+    margin-bottom: 5px;
     height: 50px;
     width: 270px;
     padding: 20px;
@@ -539,6 +543,7 @@ footer form textarea {
 }
 
 .btn {
+    max-width: 100%;
     background-color: #69c;
     width: 270px;
     height: 70px;
@@ -557,6 +562,10 @@ footer form textarea {
 }
 
 @media (max-width:480px) {
+    form {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .boxes {
         padding: 20px;
         height: auto !important;
@@ -594,6 +603,11 @@ footer form textarea {
 }
 
 @media (min-width:481px) and (max-width:767px) {
+    .rightlol{ 
+    transform: translateX(-2px);
+    margin-right: auto;
+    margin-left: auto;
+}
     .boxes {
         padding: 20px;
         height: auto !important;
@@ -602,7 +616,6 @@ footer form textarea {
         margin-top: 20px;
         margin-bottom: 10px;
     }
-    
     .text-centered {
         text-align: center
     }
@@ -620,6 +633,15 @@ footer form textarea {
 }
 
 @media (min-width:768px) and (max-width:991px) {
+    .footer-input {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .rightlol{ 
+    transform: translateX(-2px);
+    margin-right: auto;
+    margin-left: auto;
+}
     .boxes {
         padding: 20px;
         height: auto !important;
