@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GameLOG</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body>    
+    <header>
+        <ul class="nav">
+            <div class="logo">
+
+                <a href="#"><img src="img/logo2.png" alt="Логотип"></a>
+                
+            </div>
+            
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Аниме</a></li>
+            <li><a href="#">Развлечения</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><input type="text" class="search" onclick="searchnone()" placeholder="Поиск"></li>
+            <input id="popup-checkbox" type="checkbox" hidden>
+            <label for="popup-checkbox"><li><a class="login">Войти</a></li></label>
+      
+        <div class="popup-bg">
+            <div id="popup">
+                <label for="popup-checkbox"><a class="x">&times</a></label>
+                <h2>Авторизация</h2>
+                <form action="">
+                    <input type="text" placeholder="E-mail" id="email-input" onfocus="focusp()">
+                    <br>
+                    <input type="text" placeholder="Пароль" id="pass-input" >
+                    <br>
+                    <button onclick="checkvalid()" >Войти</button>
+                    <br>
+                    
+                </form>
+            </div>
+        </div>
+        </ul>
+        <div id="container">
+           <div id="second">
+            <div class="h">
+              <img class="hz" src="img/icons/gamepad.png" alt="">
+              
+                <h2>Популярные игры</h2>
+                <hr>
+                <article class="news">
+                    <div class="article-prew top">
+                       <p class="visions">12 просмотров</p>
+                       
+                        <img src="/img/article/battlefield4.jpg" alt="">
+                        
+                    </div>
+                    <div class="text">
+                        <h1>Battlefield 4</h1>
+                        <p>Battlefield 4 — мультиплатформенная компьютерная игра в жанре шутера от первого лица, двенадцатая по счету из серии игр Battlefield...</p>
+                        <text class="date-post">12.03.2017</text>
+                       
+                        <a href="#" class="read">Подробнее...</a>
+                    </div>
+                </article>
+                <article class="news">
+                    <div class="article-prew top">
+                       <p class="visions">12 просмотров</p>
+                       
+                        <img src="/img/article/battlefield4.jpg" alt="">
+                        
+                    </div>
+                    <div class="text">
+                        <h1>Battlefield 4</h1>
+                        <p>Battlefield 4 — мультиплатформенная компьютерная игра в жанре шутера от первого лица, двенадцатая по счету из серии игр Battlefield...</p>
+                        <text class="date-post">12.03.2017</text>
+                       
+                        <a href="#" class="read">Подробнее...</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+            <div id="content">
+            <div class="h">
+                <h2>Полезные статьи</h2>
+                   <hr>
+            </div>
+                <article>
+                    <div class="article-prew">
+                       <p class="visions">12 просмотров</p>
+                       <p class="likes">0 лайков</p>
+                        <img src="/img/article/battlefield.jpg" width="200" alt="">
+                        
+                    </div>
+                    <div class="text">
+                        <h1>Battlefield 4 - Новое обновление!</h1>
+                        <p>Игроки, уставшие играть в типичную Battlefield, могут радоваться, ведь...</p>
+                        <text class="date-post">12.03.2017</text>
+                        <a href="#">Подробнее...</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-prew">
+                       <p class="visions">0 просмотров</p>
+                       <p class="likes">0 лайков</p>
+                        <img src="/img/article/naruto.jpg" width="200" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Naruto Ultimate Storm 4 - Годнота?</h1>
+                        <p>Наконец, фанаты аниме "Наруто" смогут почувствовать настоящий хардкор в... </p>
+                        <text class="date-post">12.03.2017</text>
+                        <a href="#">Подробнее...</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-prew">
+                       <p class="visions">0 просмотров</p>
+                       <p class="likes">0 лайков</p>
+                        <img src="/img/article/darksouls.jpg" width="200" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Dark Souls 4 - Правда или миф?</h1>
+                        <p>Несколько недель назад в интернет просочилась информация о разработке...</p>
+                        <text class="date-post">12.03.2017</text>
+                        <a href="#">Подробнее...</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-prew">
+                       <p class="visions">0 просмотров</p>
+                       <p class="likes">0 лайков</p>
+                        <img src="/img/article/mario.jpg" width="200" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Новый Mario Odessey!</h1>
+                        <p>Новый марио радует своих поклонников..</p>
+                        <a href="#">Подробнее...</a>
+                        <text class="date-post">12.03.2017</text>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-prew">
+                       <p class="visions">0 просмотров</p>
+                       <p class="likes">0 лайков</p>
+                        <img src="/img/article/mario.jpg" width="200" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Новый Mario Odessey!</h1>
+                        <p>Новый марио радует своих поклонников..</p>
+                        <a href="#">Подробнее...</a>
+                        <text class="date-post">12.03.2017</text>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-prew">
+                       <p class="visions">0 просмотров</p>
+                       <p class="likes">0 лайков</p>
+                        <img src="/img/article/mario.jpg" width="200" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Новый Mario Odessey!</h1>
+                        <p>Новый марио радует своих поклонников..</p>
+                        <a href="#">Подробнее...</a>
+                        <text class="date-post">12.03.2017</text>
+                    </div>
+                </article>
+                
+                <div class="page-list">
+                    <a href="#">Начало</a>
+                    <a href="#">Назад</a>
+                    1
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Вперед</a>
+                    <a href="#">Конец</a>
+                </div>
+                
+           
+        </div>
+        <!--<div id="add">
+            <div class="h">
+                <h2>Рекламка</h2>
+               <img src="img/add.jpg" alt=""> 
+               <div class="some">
+                    sd
+                </div>
+            </div>
+        </div>-->
+        <!--<div id="top">
+            <div class="h">
+                <h2>Топ пользователей</h2>
+            </div>
+        </div>-->
+   
+        </div>
+    </header>
+  <!--<footer>
+        @copyright by <a href="https://www.vk.com/tonyantony1">Антон Кучер</a> 
+    </footer> -->
+
+</body>
+
+</html>
