@@ -2,11 +2,6 @@
     margin-right: 0 !important;
 }
 
-
-
-
-
-
 /*//Margin Styles*/
 h1,
 h2,
@@ -113,7 +108,6 @@ a:hover {
     margin-right: 50px;
 }
 
-
 .preheader p a {
     color: white;
     text-decoration: none;
@@ -156,20 +150,20 @@ a:hover {
 
 }
 
-
-
 .block input {
     border: none;
     font-family: "AvenirNextCyr-Regular", serif;
     font-size: 16px;
     height: 30px;
 }
-.block form{
+
+.block form {
     width: 210%;
     margin: 0;
     padding: 0;
 }
-.block form #reset{
+
+.block form #reset {
     cursor: pointer;
     opacity: 0;
     width: 8px;
@@ -180,10 +174,12 @@ a:hover {
     background-position: center;
     transform: translateX(-20px);
 }
+
 .block input:focus {
     border-bottom: 1px solid black;
 }
-.block input:focus ~ #reset{
+
+.block input:focus ~ #reset {
     opacity: 1;
 }
 
@@ -201,7 +197,6 @@ a:hover {
     float: right;
 
 }
-
 
 .third-header {
     width: 100%;
@@ -238,11 +233,9 @@ a:hover {
     color: black;
 }
 
-
 input {
     outline: none;
 }
-
 
 .menu-down {
     opacity: 0;
@@ -302,8 +295,6 @@ input {
     content: "";
 }
 
-
-
 .h {
     height: 30px;
     width: 100%;
@@ -335,14 +326,13 @@ input {
     font-weight: bold;
 }
 
-.menu-down .block-2.image{
+.menu-down .block-2.image {
     margin-top: 60px;
 }
+
 section {
     margin-top: 30px;
 }
-
-
 
 #first .sale {
 
@@ -353,23 +343,19 @@ section {
     background-position: center center;
 }
 
+.Sports img:nth-child(3) {}
 
-
-
-.Sports img:nth-child(3) {
-    
-
-}
-
-.photo-2{
+.photo-2 {
     width: 1270px;
     z-index: 1;
-        position: absolute;
+    position: absolute;
     transform: translate(-725px, 34px);
 }
-.photo-2 img{
+
+.photo-2 img {
     width: 100%;
 }
+
 #second {
     margin-top: 110px;
 }
@@ -965,6 +951,7 @@ p.acc {
 }
 
 .reg {
+
     margin: 0;
 }
 
@@ -1134,9 +1121,10 @@ a.btn {
     }
 
     #second .container .Sports img {
-        transform: translate(-20%, 0) ;
-        
+        transform: translate(-20%, 0);
+
     }
+
     #second .container .Sports img:nth-child(0) {
         display: none;
     }
@@ -1146,8 +1134,9 @@ a.btn {
     .style1 {
         display: none;
     }
-    .photo-2{
-        transform: translate(22%,0);
+
+    .photo-2 {
+        transform: translate(22%, 0);
     }
 
 
@@ -1427,77 +1416,95 @@ a.btn {
     }
 }
 
-@media screen and (max-width: 320px) {
-    #second{
+@media screen and (max-width: 456px) {
+    #second {
         height: 200px;
     }
-    #third{
-    padding-top: 0;
-    
+
+    #third {
+        padding-top: 0;
+
     }
-    #third  .first h1{
+
+    #third .first h1 {
         font-size: 24px;
     }
-    #third  .first p{
+
+    #third .first p {
         transform: translateX(120px);
         width: 300px;
     }
-    #third  .second h1{
+
+    #third .second h1 {
         font-size: 24px;
     }
-    #third  .second img{
+
+    #third .second img {
 
         width: 360px;
     }
+
     #third .second .f {
         margin-top: 40px;
     }
-    #third .second .s{
+
+    #third .second .s {
         margin-top: 40px;
     }
-    #second .Sports  .zaglMarc h1{
+
+    #second .Sports .zaglMarc h1 {
         font-size: 24px;
     }
-    #second .Sports .photo-2{
-        transform: translate(460px,-80px);
+
+    #second .Sports .photo-2 {
+        transform: translate(460px, -80px);
     }
-     #second .Sports .photo-2 img{
+
+    #second .Sports .photo-2 img {
         width: 70%;
     }
+
     #first .container .sale {
         height: 275px;
     }
-    #fourth{
+
+    #fourth {
         margin-top: 60px;
     }
-    #fourth h2{
+
+    #fourth h2 {
         font-size: 16px;
         font-weight: normal;
     }
-    .l .ves h2{
+
+    .l .ves h2 {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    
-    .l .trend{
+
+    .l .trend {
         margin-top: 0;
         margin-bottom: 0;
     }
-    .l .trend h2{
+
+    .l .trend h2 {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    
-    .l .trend img{
-        transform: translate(-250px,0);
+
+    .l .trend img {
+        transform: translate(-250px, 0);
     }
-    section#uzn{
-        margin-top: 80px;;
+
+    section#uzn {
+        margin-top: 80px;
+        ;
     }
-    
+
     #uzn .inputs {
         margin-top: 10px;
     }
+
     .preheader .block p {
         font-size: 10px;
         transform: translate(0, 4px);
@@ -1593,7 +1600,7 @@ a.btn {
     .Sports img {
         transform: translateX(-250px);
     }
-    
+
     .zaglMarc {
         text-decoration: none;
     }
