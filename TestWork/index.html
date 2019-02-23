@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>MCBuy</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/clearfix.css">
@@ -33,7 +33,41 @@
 
                 <div class="block human">
                     <img src="images/user%20(2).png" alt="Человек">
-                    <p><a href="">Вход/Регистрация</a></p>
+                    <p><a href="#" class="logBtn">Вход/Регистрация</a></p>
+                    
+                    <div class="popup-form hide">
+                        <div class="popup-form-form log neperever"> 
+                           <img src="images/x.png" alt="x" class="closing">
+                            <form action="#" method="">
+                                <input type="text" placeholder="Логин" required><input type="password" placeholder="Пароль" required>
+                                <input type="submit" class="btn" value="Войти" required>
+                                <a href="#" class="forget-a">Забыли пароль?</a>
+                                <p>Войти с помощью:</p>
+                                <div class="soc-seti">
+                                    <img src="images/ok.png" alt="">
+                                    <img src="images/vk.png" alt="">
+                                    <img src="images/Fb.png" alt="">
+                                </div>
+                                
+                                    <p class="acc">Ещё нет аккаунта?</p>
+                                <input type="submit" class="btn reg" value="РЕГИСТРАЦИЯ">
+                            </form>
+                        </div>
+                        <div class="popup-form-form perever registr">
+                            <form action="#" method="">
+                                <input type="text" placeholder="Логин" required>
+                                <input type="email" placeholder="E-mail" required>
+                                <input id="regPassword" type="password" placeholder="Пароль" required>
+                                <span class="lightColor">Не менее 6 символов</span>
+                                <input id="regPassword2" type="password" placeholder="Подтвердите пароль" required>
+                                <div class="chick">
+                                    <div class="cf"><input type="checkbox"></div><div class="cs">Я даю согласие на <a href="#">обработку персональных данных</a></div>
+                                </div>
+                                <input type="submit" class="btn reg" value="РЕГИСТРАЦИЯ">
+                                <a href="#" class="forget-a">Забыли пароль?</a>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,14 +75,85 @@
             <div class="container">
                 <div class="into-sheader">
                     <div class="block glass">
-                        <a href="#"><img class="burger" src="images/burger.png" alt=""></a>
+                        <label for="burger"><img class="burger" src="images/burger.png" alt=""></label><input id="burger" name="burger" type="radio">
+                        <div class="burger-popup">
+                            <div class="burger-menu">
+                                <div class="burger-block-human">
+                                    <img src="images/blackhuman.png" alt="Человек">
+                                    <p><a href="#" class="logBtn">Вход/Регистрация</a></p>
+                                </div>
+                                <label for="close">
+                                    <div class="close"></div>
+                                </label><input type="radio" name="burger" id="close">
+                                <div class="content">
+                                    <div class="content-t">
+                                        <details>
+                                            <summary>
+                                                <h3>Новинки</h3>
+                                            </summary>
+                                        </details>
+                                        <details open>
+                                            <summary>
+                                                <h3>Одежда</h3>
+                                            </summary>
+                                            <ul>
+                                                <li><a href="#">Джинсы</a></li>
+                                                <li><a href="#">Жакеты</a></li>
+                                                <li><a href="#">Пиджаки</a></li>
+                                                <li><a href="#">Юбки</a></li>
+                                                <li><a href="#">Брюки</a></li>
+                                                <li><a href="#">Платья</a></li>
+                                                <li><a href="#">Жилеты</a></li>
+                                                <li><a href="#">Пуловеры</a></li>
+                                                <li><a href="#">Блузы</a></li>
+                                                <li><a href="#">Пальто</a></li>
+                                                <li><a href="#">Куртки</a></li>
+                                                <li><a href="#">Топы</a></li>
+                                                <li><a href="#">Футболки</a></li>
+                                            </ul>
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                <h3>Обувь</h3>
+                                            </summary>
+
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                <h3>Сумки</h3>
+                                            </summary>
+
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                <h3>Аксессуары</h3>
+                                            </summary>
+
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                <h3>Модный блог</h3>
+                                            </summary>
+
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                <h3>SALE</h3>
+                                            </summary>
+
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                         <img src="images/magnifying-glass.png" alt="Самолет">
                         <input type="text" placeholder="Поиск">
                     </div>
                     <div class="block center logo">
                         <a href="#"><img src="images/logo1.png" alt=""></a>
                     </div>
-                    <div class="block  shop">
+                    <div class="block shop">
                         <a href="#"><img src="images/heart-upside-down.png" alt=""></a>
                         <a href="#"><img src="images/shopping-bag.png" alt=""></a>
                         <p class="shipCount">10</p>
@@ -62,7 +167,9 @@
                     <ul class="main">
                         <li><a href="#">Новинки</a></li>
                         <li class="dress">
-                            <a href="#">Одежда<div class="menu-down">
+                            <a href="#">Одежда
+
+                                <div class="menu-down">
                                     <div class="h"></div>
                                     <div class="block-2">
                                         <ul>
@@ -88,6 +195,9 @@
                                             <li>Топы</li>
                                             <li>Футболки</li>
                                         </ul>
+                                    </div>
+                                    <div class="block-2">
+                                        <img src="images/photos/" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -211,11 +321,11 @@
     </section>
     <footer>
         <div class="container">
-            <div class="col">
+            <div class="col logof">
                 <a href="#"><img src="images/logoW.png" alt=""></a>
             </div>
             <div class="col">
-                <h3>MCBUY</h3>
+                <h3><a href="">MCBUY</a></h3>
                 <ul>
                     <li><a href="#">Производство</a></li>
                     <li><a href="#">Философия</a></li>
@@ -249,7 +359,7 @@
                 <a href="#"><img src="images/visa-pay-logo.png" alt=""></a>
                 <a href="#"><img src="images/h-logo.png" alt=""></a>
             </div>
-            <div class="col">
+            <div class="col soc">
                 <p>Мы в социальных сетях</p>
                 <div class="imgs">
                     <a href="#"><img src="images/facebook.png" alt=""></a>
@@ -261,6 +371,10 @@
 
         </div>
     </footer>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 
 </html>
