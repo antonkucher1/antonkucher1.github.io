@@ -166,11 +166,28 @@ a:hover {
     font-size: 16px;
     height: 30px;
 }
-
+.block form{
+    width: 210%;
+    margin: 0;
+    padding: 0;
+}
+.block form #reset{
+    cursor: pointer;
+    opacity: 0;
+    width: 8px;
+    height: 8px;
+    background: url(../images/minix.png);
+    border: none;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-20px);
+}
 .block input:focus {
     border-bottom: 1px solid black;
 }
-
+.block input:focus ~ #reset{
+    opacity: 1;
+}
 
 .block p.shipCount {
     display: inline;
@@ -320,6 +337,9 @@ input {
     font-weight: bold;
 }
 
+.menu-down .block-2.image{
+    margin-top: 60px;
+}
 section {
     margin-top: 30px;
 }
@@ -1106,7 +1126,7 @@ a.btn {
     }
 
     #second .container .Sports img {
-        transform: translate(-20%, 0);
+        transform: translate(-20%, 0) ;
         
     }
 }
