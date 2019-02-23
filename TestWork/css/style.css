@@ -93,12 +93,10 @@ a:hover {
     display: flex;
     -webkit-display: flex;
     -ms-display: flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
     align-items: center;
     -ms-align-items: center;
     -webkit-align-items: center;
+    justify-content: flex-end;
 }
 
 .preheader p {
@@ -359,16 +357,26 @@ section {
 
 
 .Sports img:nth-child(3) {
-    z-index: 1;
-    position: absolute;
-    transform: translate(-725px, 34px);
+    
+
 }
 
-
+.photo-2{
+    width: 1270px;
+    z-index: 1;
+        position: absolute;
+    transform: translate(-725px, 34px);
+}
+.photo-2 img{
+    width: 100%;
+}
 #second {
     margin-top: 110px;
 }
 
+.photo-2 {
+    display: inline-block;
+}
 
 #third {
     margin-top: 150px;
@@ -1132,10 +1140,12 @@ a.btn {
 }
 
 @media screen and (max-width: 1329px) {
-    .Sports img:nth-child(1) {
+    .style1 {
         display: none;
     }
-
+    .photo-2{
+        transform: translate(22%,0);
+    }
 
 
 
@@ -1165,8 +1175,8 @@ a.btn {
 }
 
 @media screen and (max-width: 1024px) {
-    #second .container .Sports img {
-        transform: translate(-300px, 0);
+    #second .container .Sports .photo-2 img {
+        transform: translate(-600px, 0);
     }
 }
 
@@ -1293,8 +1303,8 @@ a.btn {
         flex-direction: column;
     }
 
-    #second .container .Sports img {
-        transform: translate(-170px, 150px);
+    #second .container .Sports .photo-2 img {
+        transform: translate(-455px, 150px);
     }
 
     .second-header input {
@@ -1415,6 +1425,76 @@ a.btn {
 }
 
 @media screen and (max-width: 320px) {
+    #second{
+        height: 200px;
+    }
+    #third{
+    padding-top: 0;
+    
+    }
+    #third  .first h1{
+        font-size: 24px;
+    }
+    #third  .first p{
+        transform: translateX(120px);
+        width: 300px;
+    }
+    #third  .second h1{
+        font-size: 24px;
+    }
+    #third  .second img{
+
+        width: 360px;
+    }
+    #third .second .f {
+        margin-top: 40px;
+    }
+    #third .second .s{
+        margin-top: 40px;
+    }
+    #second .Sports  .zaglMarc h1{
+        font-size: 24px;
+    }
+    #second .Sports .photo-2{
+        transform: translate(460px,-80px);
+    }
+     #second .Sports .photo-2 img{
+        width: 70%;
+    }
+    #first .container .sale {
+        height: 275px;
+    }
+    #fourth{
+        margin-top: 60px;
+    }
+    #fourth h2{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .l .ves h2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .l .trend{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .l .trend h2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .l .trend img{
+        transform: translate(-250px,0);
+    }
+    section#uzn{
+        margin-top: 80px;;
+    }
+    
+    #uzn .inputs {
+        margin-top: 10px;
+    }
     .preheader .block p {
         font-size: 10px;
         transform: translate(0, 4px);
@@ -1499,7 +1579,7 @@ a.btn {
     }
 
     .zaglMarc {
-        font-size: 24px !important;
+        font-size: 21px !important;
     }
 
     .block.center.logo {
@@ -1510,7 +1590,7 @@ a.btn {
     .Sports img {
         transform: translateX(-250px);
     }
-
+    
     .zaglMarc {
         text-decoration: none;
     }
