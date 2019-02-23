@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <title>MCBuy</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -28,28 +29,28 @@
                     <p><a href="tel:+7800552748">8 800 555 2748</a></p>
                 </div>
                 <div class="block phone">
-                    <img src="images/call%20(1).png" alt="Телефон">
+                    <a href="tel:+7800552748"><img src="images/call%20(1).png" alt="Телефон"></a>
                 </div>
 
                 <div class="block human">
                     <img src="images/user%20(2).png" alt="Человек">
                     <p><a href="#" class="logBtn">Вход/Регистрация</a></p>
-                    
+
                     <div class="popup-form hide">
-                        <div class="popup-form-form log neperever"> 
-                           <img src="images/x.png" alt="x" class="closing">
+                        <div class="popup-form-form log neperever">
+                            <img src="images/x.png" alt="x" class="closing">
                             <form action="#">
                                 <input type="text" placeholder="Логин" required><input type="password" placeholder="Пароль" required>
                                 <input type="submit" class="btn" value="Войти">
                                 <a href="#" class="forget-a">Забыли пароль?</a>
                                 <p>Войти с помощью:</p>
                                 <div class="soc-seti">
-                                    <img src="images/ok.png" alt="">
-                                    <img src="images/vk.png" alt="">
-                                    <img src="images/Fb.png" alt="">
+                                    <a href="#"><img src="images/ok.png" alt=""></a>
+                                    <a href="#"><img src="images/vk.png" alt=""></a>
+                                    <a href="#"><img src="images/Fb.png" alt=""></a>
                                 </div>
-                                
-                                    <p class="acc">Ещё нет аккаунта?</p>
+
+                                <p class="acc">Ещё нет аккаунта?</p>
                                 <input type="submit" class="btn reg" value="РЕГИСТРАЦИЯ">
                             </form>
                         </div>
@@ -61,7 +62,9 @@
                                 <span class="lightColor">Не менее 6 символов</span>
                                 <input id="regPassword2" type="password" placeholder="Подтвердите пароль" required>
                                 <div class="chick">
-                                    <div class="cf"><input type="checkbox" required></div><div class="cs">Я даю согласие на <a href="#">обработку персональных данных</a></div>
+                                    <div class="cf"><input type="checkbox" class="checkbox" id="checkbox" />
+                                        <label for="checkbox"></label></div>
+                                    <div class="cs">Я даю согласие на <a href="#">обработку персональных данных</a></div>
                                 </div>
                                 <input type="submit" class="btn reg" value="РЕГИСТРАЦИЯ">
                                 <a href="#" class="forget-a">Забыли пароль?</a>
@@ -362,19 +365,19 @@
             <div class="col soc">
                 <p>Мы в социальных сетях</p>
                 <div class="imgs">
-                    <a href="#"><img src="images/facebook.png" alt=""></a>
-                    <a href="#"><img src="images/instagram.png" alt=""></a>
-                    <a href="#"><img src="images/vkontakte.png" alt=""></a>
+                    <a href="#"><div class="fb"></div></a>
+                    <a href="#"><div class="inst"></div></a>
+                    <a href="#"><div class="vk"></div></a>
                 </div>
             </div>
             <p class="copyright">Copyright © MCBUY.RU 2018 Все права защищены</p>
 
         </div>
     </footer>
-    
+
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
-    
+
 </body>
 
 </html>
